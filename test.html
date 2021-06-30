@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+    <body>
+        <h3> Robot Arm control panel</h3>
+        <form name="formArm" method="post" action="index.php">     
+<div>
+    <span id="v1"></span>
+    <input type="range" id="mot1" name="volume1" min="0" max="180">
+    <label for="volume1">motor1</label>
+    
+</div>
+<br><br>
+<div>
+
+    <span id="v2"></span>
+    <input type="range" id="mot2" name="volume2" min="0" max="180">
+    <label for="volume2"> motor2</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v3"></span>
+    <input type="range" id="mot3" name="volume3" min="0" max="180">
+    <label for="volume3">motor3</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v4"></span>
+    <input type="range" id="mot4" name="volume4" min="0" max="180">
+    <label for="volume4">motor4</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v5"></span>
+    <input type="range" id="mot5" name="volume5" min="0" max="180">
+    <label for="volume5">motor5</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v6"></span>
+    <input type="range" id="mot6" name="volume6" min="0" max="180">
+    <label for="volume6">motor6</label>
+    
+</div>
+
+<input type="submit" name="save" id="submit" value="save">
+</form>
+
+<form name="formArm" method="post" action="submit.php">
+<input type="submit" name="run" id="Run" value="run">
+</form>
+
+<script>
+    var slider1 = document.getElementById("mot1");
+var output1 = document.getElementById("v1");
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+var slider2 = document.getElementById("mot2");
+var output2 = document.getElementById("v2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+
+var slider3 = document.getElementById("mot3");
+var output3 = document.getElementById("v3");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+
+
+var slider4 = document.getElementById("mot4");
+var output4 = document.getElementById("v4");
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+var slider5 = document.getElementById("mot5");
+var output5 = document.getElementById("v5");
+output5.innerHTML = slider5.value;
+
+slider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+var slider6 = document.getElementById("mot6");
+var output6 = document.getElementById("v6");
+output6.innerHTML = slider6.value;
+
+slider6.oninput = function() {
+  output6.innerHTML = this.value;
+}
+
+</script>
+
+
+    </body>
+</html>
